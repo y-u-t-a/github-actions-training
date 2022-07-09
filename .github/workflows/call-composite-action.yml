@@ -18,3 +18,5 @@ jobs:
       - name: list file
         working-directory: root
         run: ls
+      - name: call composite action
+        uses: ../composite-action/actions/hello
