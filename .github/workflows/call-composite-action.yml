@@ -7,16 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          path: root/github-actions-training
       - name: checkout action repo
         uses: actions/checkout@v3
         with:
           repository: y-u-t-a/composite-action
           token: ${{ secrets.GH_TOKEN }}
-          path: root/composite-action
+          path: composite-action
       - name: list file
-        working-directory: root
         run: ls
       - name: call composite action
         uses: ./composite-action/.github/actions/hello
