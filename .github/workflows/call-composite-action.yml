@@ -8,7 +8,9 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v1
-      - uses: y-u-t-a/composite-action/hello@main
+      - uses: actions/checkout@v3
+      - name: checkout action repo
+        uses: actions/checkout@v3
         with:
-          who-to-greet: "Yuta"
+          repository: y-u-t-a/composite-action
+      - run: ls
