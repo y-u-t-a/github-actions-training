@@ -19,4 +19,4 @@ jobs:
         working-directory: root
         run: ls
       - name: call composite action
-        uses: ../composite-action/.github/actions/hello
+        uses: ./composite-action/.github/actions/hello
