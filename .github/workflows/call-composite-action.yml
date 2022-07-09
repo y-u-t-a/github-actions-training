@@ -1,4 +1,4 @@
-name: A workflow for my Hello World file
+name: Call composite action
 on:
   workflow_dispatch:
 jobs:
