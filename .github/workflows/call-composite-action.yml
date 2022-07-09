@@ -12,5 +12,6 @@ jobs:
         with:
           repository: y-u-t-a/composite-action
           token: ${{ secrets.GH_TOKEN }}
+          path: "composite-action"
       - name: list file
         run: ls
