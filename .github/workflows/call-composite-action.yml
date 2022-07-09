@@ -1,4 +1,4 @@
-name: Call composite action
+name: Call composite action from another private repository
 on:
   workflow_dispatch:
 jobs:
