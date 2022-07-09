@@ -5,15 +5,13 @@ jobs:
   build:
     name: Hello world action
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: checkout action repo
         uses: actions/checkout@v3
         with:
           repository: y-u-t-a/composite-action
-          ref: "main"
+          token: ${{ secrets.GH_TOKEN }}
           path: $GITHUB_WORKSPACE/..
       - name: list file
         working-directory: $GITHUB_WORKSPACE/..
