@@ -12,7 +12,5 @@ jobs:
         with:
           repository: y-u-t-a/composite-action
           token: ${{ secrets.GH_TOKEN }}
-          path: $GITHUB_WORKSPACE/..
       - name: list file
-        working-directory: $GITHUB_WORKSPACE/..
         run: ls
