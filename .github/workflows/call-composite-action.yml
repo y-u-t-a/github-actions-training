@@ -16,4 +16,5 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           path: root/composite-action
       - name: list file
+        working-directory: root
         run: ls
